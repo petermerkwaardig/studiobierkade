@@ -36,7 +36,7 @@ try:
         salary = st.number_input(f'Bruto {year}:', min_value=0.0, step=0.01)
         yearly_salaries.append(salary)
 
-    if st.button('Bereken'):
+    if st.button('Bereken vergoeding'):
         if yearly_salaries and start_date != 'YYYY-MM-DD' and end_date != 'YYYY-MM-DD':
             average_monthly_salary = calculate_average_monthly_salary(yearly_salaries)
             severance_payment = calculate_severance_payment(start_date, end_date, average_monthly_salary)
