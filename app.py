@@ -45,4 +45,4 @@ try:
         else:
             st.write("Vul alle velden correct in.")
 except Exception as e:
-    st.write("Fout bij invoer. Controleer de data en probeer opnieuw.")
+    st.write("Je dienstverband bij Lifetri")
