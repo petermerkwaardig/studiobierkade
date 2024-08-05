@@ -44,3 +44,4 @@ try:
             st.write(f"Ontslagvergoeding: €{severance_payment}")
         else:
             st.write("Vul alle velden correct in.")
+        finally: st.write("Enjoy!")
