@@ -27,6 +27,7 @@ start_date = st.text_input('Startdatum (YYYY-MM-DD):', 'YYYY-MM-DD')
 end_date = st.text_input('Einddatum (YYYY-MM-DD):', 'YYYY-MM-DD')
 
 try:
+    st.write(""Hoe lang werkte je bij Lifetri?")
     start_year = datetime.strptime(start_date, '%Y-%m-%d').year
     end_year = datetime.strptime(end_date, '%Y-%m-%d').year
 
@@ -36,7 +37,7 @@ try:
         salary = st.number_input(f'Bruto {year}:', min_value=0.0, step=0.01)
         yearly_salaries.append(salary)
 
-    if st.button('Bereken vergoeding'):
+    if st.button('Bereken je vergoeding'):
         if yearly_salaries and start_date != 'YYYY-MM-DD' and end_date != 'YYYY-MM-DD':
             average_monthly_salary = calculate_average_monthly_salary(yearly_salaries)
             severance_payment = calculate_severance_payment(start_date, end_date, average_monthly_salary)
@@ -45,4 +46,4 @@ try:
         else:
             st.write("Vul alle velden correct in.")
 except Exception as e:
-    st.write("Hoe lang werkte je bij Lifetri?")
+    st.write("Top!")
