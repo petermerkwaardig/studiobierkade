@@ -27,7 +27,6 @@ start_date = st.text_input('Startdatum (YYYY-MM-DD):', 'YYYY-MM-DD')
 end_date = st.text_input('Einddatum (YYYY-MM-DD):', 'YYYY-MM-DD')
 
 try:
-    st.write("Hoe lang werkte je bij Lifetri?")
     start_year = datetime.strptime(start_date, '%Y-%m-%d').year
     end_year = datetime.strptime(end_date, '%Y-%m-%d').year
 
@@ -46,4 +45,4 @@ try:
         else:
             st.write("Vul alle velden correct in.")
 except Exception as e:
-    st.write("Top!")
+    st.write("Hoe lang werkte je bij Lifetri?")
