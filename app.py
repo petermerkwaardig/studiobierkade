@@ -21,7 +21,7 @@ def calculate_severance_payment(start_date, end_date, monthly_salary):
     return round(severance_payment, 2)
 
 # Streamlit interface
-st.title('Ontslagvergoedingcalculator')
+st.title('Hoeveel krijg je mee?')
 
 start_date = st.text_input('Startdatum (YYYY-MM-DD):', 'YYYY-MM-DD')
 end_date = st.text_input('Einddatum (YYYY-MM-DD):', 'YYYY-MM-DD')
